@@ -1,6 +1,6 @@
 {
   "name": "@pointblankdev/react-activity-feed",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "React components to create activity and notification feeds",
   "author": "GetStream",
   "license": "BSD-3-Clause",
