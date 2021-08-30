@@ -1,6 +1,6 @@
 {
   "name": "@pointblankdev/react-activity-feed",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "React components to create activity and notification feeds",
   "author": "GetStream",
   "license": "BSD-3-Clause",
@@ -124,6 +124,7 @@
     "@types/url-parse": "^1.4.3",
     "@types/webscopeio__react-textarea-autocomplete": "^4.7.0",
     "@webscopeio/react-textarea-autocomplete": "^4.7.3",
+    "cloudinary-react": "^1.7.0",
     "dayjs": "^1.10.4",
     "emoji-mart": "^3.0.1",
     "getstream": "^7.2.8",

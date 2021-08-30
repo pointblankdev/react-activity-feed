@@ -1,5 +1,6 @@
 import React, { MouseEventHandler as F } from 'react';
 import { AvatarIcon } from './Icons';
+import { Image } from 'cloudinary-react';
 
 export type AvatarProps<T extends SVGSVGElement | HTMLImageElement> = {
   alt?: string;
@@ -24,7 +25,15 @@ export function Avatar<T extends HTMLImageElement | SVGSVGElement>({
   };
 
   return image ? (
-    <img {...sharedProperties} src={image} alt={alt ?? ''} onClick={onClick as F<HTMLImageElement>} />
+    <Image
+      {...sharedProperties}
+      width={200}
+      height={200}
+      crop="fill"
+      publicId={image}
+      alt={alt ?? ''}
+      onClick={onClick as F<HTMLImageElement>}
+    />
   ) : (
     <AvatarIcon {...sharedProperties} onClick={onClick as F<SVGSVGElement>} />
   );
