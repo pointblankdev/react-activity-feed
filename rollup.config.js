@@ -4,7 +4,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
 import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
+import image from '@rollup/plugin-image';
 import globals from 'rollup-plugin-node-globals';
+import css from 'rollup-plugin-import-css';
 import scss from 'rollup-plugin-scss';
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
@@ -92,6 +94,8 @@ const fullBrowserBundle = {
     },
   ],
   plugins: [
+    image(),
+    css(),
     resolve({ browser: true, extensions }),
     commonjs({ include: /node_modules/ }),
     external(),
