@@ -1,10 +1,10 @@
 {
-  "name": "react-activity-feed",
+  "name": "@pointblankdev/react-activity-feed",
   "version": "1.2.1",
   "description": "React components to create activity and notification feeds",
   "author": "GetStream",
   "license": "BSD-3-Clause",
-  "repository": "GetStream/react-activity-feed",
+  "repository": "@pointblankdev/react-activity-feed",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
