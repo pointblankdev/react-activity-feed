@@ -24,12 +24,16 @@ export function Avatar<T extends HTMLImageElement | SVGSVGElement>({
     className: `raf-avatar ${rounded ? 'raf-avatar--rounded' : ''} ${circle ? 'raf-avatar--circle' : ''}`,
   };
 
+  console.log({ image });
+
   return image ? (
     <Image
       {...sharedProperties}
+      cloudName={'unitedingaming'}
       width={200}
       height={200}
       crop="fill"
+      gravity="auto"
       publicId={image}
       alt={alt ?? ''}
       onClick={onClick as F<HTMLImageElement>}
